@@ -24,7 +24,8 @@ class App extends React.Component<{}, AppState>{
   return (
     <div className="App">
       <header className="App-header">
-          Shopping list
+          <b>Shopping List</b>
+          <p> This is a shopping list app! You can add a item to the list below, along with the price. Enjoy! </p>
       </header>
       <h1> These are the items: </h1>
     </div>
