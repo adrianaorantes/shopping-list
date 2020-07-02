@@ -1,24 +1,94 @@
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
-
+input[type=text] {
+  background-color:white;
+  background-position: 10px 10px;
+  border-width: 3px;
+  border-color:  #CC5128;
+  font-size:19px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+input{
+  background-color: #ce7456;
+  border-radius: 10px;
+  color: #120C03;
+  margin: 4px 2px;
+  text-align: center;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+ul{
+  background:#F5D6CC;
+  background: url(https://images.unsplash.com/photo-1519972064555-542444e71b54?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  text-align: center;
+  list-style-position: inside;
+  border-color: #E29578;
+  border-style: ridge;
+  border-width: 1px;
+  margin: auto;
+  font-size: 25px;
+  width:500px;
+ 
+}
+
+button {
+  background-color: #ce7456;
+  border-radius: 10px;
+  color: #120C03;
+  margin: 4px 2px;
+  text-align: center;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-size:26px;
+}
+h3{
+  border-style: dashed;
+  border-color:#E29578;
+  border-width: 4px;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+
+}
+form{
+  font-family: 'Poppins', sans-serif;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+}
+h1{
+  font-size: 80px;
+  font-family: 'Poppins', sans-serif;
+  color :#CC5128
+}
 p{
-  font-size: 20px;
-  color: #457EAC;
+  font-size: 23px;
+  color: #00363D;
+  font-family: 'Poppins', sans-serif;;
 }
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #83C5BE;
+  background:url(https://images.unsplash.com/photo-1525328437458-0c4d4db7cab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  min-height: 55vh;
   display: flex;
   flex-direction: column;
   align-items: center;

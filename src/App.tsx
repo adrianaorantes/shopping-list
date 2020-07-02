@@ -33,36 +33,54 @@ class App extends React.Component<{}, AppState>{
   //renders the html (interprets) to display content to a page
   render(){
   return (
-    <div className="App">
+    <div className="App" id="square">
       <header className="App-header">
-          <b>Shopping List</b>
-          <p> This is a shopping list app! You can add an item to the list below, along with the price. Enjoy! </p>
+          <h1>ShopNotes</h1>
+          <p><b>Personal Shopping List App for Easy On-The-Go Access </b></p>
+         
       </header>
-      <h1> These are the items: </h1>
 
-      <ul>
+      <h2> <b>My Shopping List</b> </h2>
+      <p> </p>
+
+ <ul>
+   <br></br>
           {/* //turns array of items into a map */}
           {this.state.items.map(item => (
             <li>
-              Name of Product: {item.name}
-            <br />
-              Price: ${item.price}
+               {item.name},  ${item.price}
             </li>
+            
           ))}
-        </ul>
-        <p>  </p>
-        <form onSubmit={this.submitForm}>
-          <input type="text" placeholder="Enter a name..." onChange={this.changeInputName} />
-          <input type="text" placeholder="Price..." onChange={this.changeInputPrice} />
-          <input type="submit" placeholder="Submit"/>
+          <br></br>
+          </ul>
+
+
+       <h4><b>ADD NEW ITEM:</b></h4> 
+        <form  onSubmit={this.submitForm}>
+          
+          <p><b>Name of Product:</b></p>
+          <input type="text" onChange={this.changeInputName} />
+          <br></br>
+          <br></br>
+          <p><b>Price of Product:</b></p>
+          <input type="text" onChange={this.changeInputPrice} />
+          <br></br>
+          <br></br>
+          <input type="reset" defaultValue="Reset"   />  
+          <button type="submit" >Submit </button>
+          
+     
         </form>
         <br></br>
         <br></br>
     </div>
+    
   );
   }
   private inputName = "";
   private inputPrice = "";
+
 
   private changeInputName = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.inputName = event.target.value;
